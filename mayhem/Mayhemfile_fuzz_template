@@ -1,0 +1,9 @@
+project: savantenvs/tinyproxy
+target: fuzz_template
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_template/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_template
+    libfuzzer: true
+    timeout: 10

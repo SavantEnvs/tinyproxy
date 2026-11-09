@@ -1,0 +1,6 @@
+<html><head><title>{cause}</title></head>
+<body>
+<h1>{errno} {cause}</h1>
+<p>{detail}</p>
+<hr>{package} version {version}
+</body></html>

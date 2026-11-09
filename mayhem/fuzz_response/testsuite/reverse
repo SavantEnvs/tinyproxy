@@ -1,0 +1,4 @@
+HTTP/1.1 301 Moved
+Location: http://backend.example:8080/app/x
+Set-Cookie: s=1; path=/app
+

@@ -1,0 +1,9 @@
+project: savantenvs/tinyproxy
+target: fuzz_request-mined-4c71434
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_request-mined-4c71434/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_request
+    libfuzzer: true
+    timeout: 10
